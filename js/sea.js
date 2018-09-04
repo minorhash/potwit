@@ -2,7 +2,7 @@ var Twit = require('twit')
 var cnf=require("./cnf.json")
 
 var T = new Twit({
-  consumer_key:         '...',
+  consumer_key:        cnf.key,
   consumer_secret:      '...',
   access_token:         '...',
   access_token_secret:  '...',
