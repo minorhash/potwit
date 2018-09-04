@@ -18,11 +18,12 @@ T.get('search/tweets', { q: 'gustavo arellano since:2011-07-11', count: 30}, fun
 for(var i=0;i<arr.length;i++){
 //console.log(i)
 //console.log(arr[i].lang)
-if(arr[i].lang=="en"){
+if(arr[i].entities.hashtags[0]="tacos"){
 console.log(arr[i].text)
-console.log(arr[i].entities)
 console.log("========")
-}
-}
+}else{console.log("no hash")}
+
+}//for
+
 
 })
