@@ -1,5 +1,5 @@
 var Twit = require('twit')
-var cnf=require("../cnf.json")
+var cnf=require("../son/cnf.json")
 
 var T = new Twit({
   consumer_key:        cnf.key,
@@ -10,6 +10,19 @@ var T = new Twit({
   strictSSL:            true,     // optional - requires SSL certificates to be valid.
 })
 
-T.get('search/tweets', { q: 'tamale:2011-07-11', count: 100 }, function(err, data, res) {
-  console.log(res)
+T.get('search/tweets', { q: 'gustavo arellano since:2011-07-11', count: 30}, function(err, dat, res) {
+
+  //console.log(dat)
+    var arr=dat.statuses
+
+for(var i=0;i<arr.length;i++){
+//console.log(i)
+//console.log(arr[i].lang)
+if(arr[i].lang=="en"){
+console.log(arr[i].text)
+console.log(arr[i].entities)
+console.log("========")
+}
+}
+
 })

@@ -1,0 +1,31 @@
+{ statuses:
+   [ { created_at: 'Tue Sep 04 06:17:44 +0000 2018',
+       id: 1036860848357007400,
+       id_str: '1036860848357007361',
+       text:
+        'RT @mutsu9829: 暴風域在住民はちゃんと養生テープorガムテで窓(特にベランダとかの大きい窓)補強しとくんだぞ！！\n窓の弱い所は中心部だからそこをテープで補強して窓を支えてやれ！！\n#台風21号 https://t.co/ytfMcQaWvk',
+       truncated: false,
+       entities: [Object],
+       extended_entities: [Object],
+       metadata: [Object],
+       source:
+        '<a href="http://twitter.com/download/iphone" rel="nofollow">Twitter for iPhone</a>',
+       in_reply_to_status_id: null,
+       in_reply_to_status_id_str: null,
+       in_reply_to_user_id: null,
+       in_reply_to_user_id_str: null,
+       in_reply_to_screen_name: null,
+       user: [Object],
+       geo: null,
+       coordinates: null,
+       place: null,
+       contributors: null,
+       retweeted_status: [Object],
+       is_quote_status: false,
+       retweet_count: 5656,
+       favorite_count: 0,
+       favorited: false,
+       retweeted: false,
+       possibly_sensitive: false,
+       lang: 'ja' },]
+
