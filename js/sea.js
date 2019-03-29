@@ -10,10 +10,13 @@ var T = new Twit({
   strictSSL:            true,     // optional - requires SSL certificates to be valid.
 })
 
-T.get('search/tweets', { q: 'gustavo arellano since:2011-07-11', count: 30}, function(err, dat, res) {
+var que="gustavo arellano since:2018-01-01"
+
+T.get('search/tweets', { q: que, count: 3}, function(err, dat, res) {
 
   //console.log(dat)
     var arr=dat.statuses
+console.log(arr.length)
 
 for(var i=0;i<arr.length;i++){
 //console.log(i)
