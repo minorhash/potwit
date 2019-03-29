@@ -10,22 +10,20 @@ var T = new Twit({
   strictSSL:            true,     // optional - requires SSL certificates to be valid.
 })
 
-var que="gustavo arellano since:2018-01-01"
-
-T.get('search/tweets', { q: que, count: 3}, function(err, dat, res) {
+T.get('search/tweets', { q: 'gustavo arellano since:2011-07-11', count: 30}, function(err, dat, res) {
 
   //console.log(dat)
     var arr=dat.statuses
-console.log(arr.length)
 
 for(var i=0;i<arr.length;i++){
 //console.log(i)
 //console.log(arr[i].lang)
-if(arr[i].lang=="en"){
+if(arr[i].entities.hashtags[0]="tacos"){
 console.log(arr[i].text)
-console.log(arr[i].entities)
 console.log("========")
-}
-}
+}else{console.log("no hash")}
+
+}//for
+
 
 })
